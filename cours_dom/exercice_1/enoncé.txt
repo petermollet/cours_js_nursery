@@ -1,0 +1,9 @@
+Le but de l'exercice est d'injecté les données de 'livre' (du fichier script.js) dans le index.html.
+
+Pour cela on ne modifie pas le fichier index.html mais uniquement le fichier script.js, en usant des méthodes:
+- getElementById()
+- textContent
+
+Pour la disponibilité des livres, on utilisera des conditions (if/else) 
+pour afficher de manière dynamique le texte "Disponible" ou "Indisponible" dans la page index.html.
+Avec un fond rouge pour les livres indisponibles et vert pour les livres disponibles.

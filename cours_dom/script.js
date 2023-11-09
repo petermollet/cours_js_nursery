@@ -18,3 +18,7 @@ titre.classList.add("border-bottom");
 maDiv.classList.remove("container");
 
 document.getElementById("mon-container").classList.toggle("container");
+
+let monSpan = document.createElement("span");
+maDiv.appendChild(monSpan);
+maDiv.removeChild(monSpan);
