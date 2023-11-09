@@ -1,0 +1,42 @@
+* {
+  border-radius: 30px;
+  padding: 8px;
+}
+
+.themeContainer {
+  position: fixed;
+  top: 10px;
+}
+
+.theme {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#dark {
+  background: black;
+}
+
+#yellow {
+  background: yellow;
+}
+
+#green {
+  background: green;
+}
+
+.darkTheme {
+  background: black;
+  color: white;
+}
+
+.yellowTheme {
+  background: yellow;
+  color: white;
+}
+
+.greenTheme {
+  background: green;
+  color: white;
+}
