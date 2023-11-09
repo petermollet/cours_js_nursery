@@ -1,0 +1,12 @@
+Le but de cet exercice, similaire au précédent, est d'afficher une page d'un livre.
+Le petit truc ici, c'est que selon un parametre dans l'URL (appelé id), on affiche un contenu différent.
+
+Par exemple, si on appelle la page avec l'URL suivante : /page_livre.html?id=1, on affiche le contenu du livre 1.
+Alors que si on appelle la page avec l'URL suivante : /page_livre.html?id=0, on affiche le contenu du livre 0.
+
+L'idée est avant tout de montrer qu'on a pas besoin de faire un fichier HTML par livre, 
+mais qu'on peut faire un seul fichier HTML qui affiche le contenu du livre en fonction de l'id passé en parametre.
+Et donc si on a 100 livres, on a pas besoin de 100 fichiers HTML, mais seulement d'un seul fichier HTML 
+qui affichera le contenu du livre de manière dynamique.
+
+Encore une fois, on n'a pas à modifier le html de l'exercice, juste à intéragir avec le DOM pour afficher le bon contenu.
