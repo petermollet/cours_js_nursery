@@ -1,0 +1,3 @@
+Utilisez ce que vous avez découvert dans ce cours sur le JS DOM pour faire en sorte 
+que le bouton « Appuyer ! » de l’exercice fasse apparaître l’image de New-York 
+quand celle-ci n’est pas visible et disparaître quand l’image est visible.
