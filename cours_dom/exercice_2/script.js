@@ -19,6 +19,15 @@ const livres = [
     estDisponible: false,
     image: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81smq5GDvvL._AC_UF1000,1000_QL80_.jpg",
   },
+  {
+    titre: "The Shining",
+    auteur: "Stephen King",
+    description: "Shining, l'enfant lumière est un roman d'horreur écrit par Stephen King et publié en 1977. Cet ouvrage, le troisième qu’il publie, l’établit comme une figure importante du genre fantastique",
+    dateDeParution: 1977,
+    nombreDePages: 1000,
+    estDisponible: true,
+    image: "https://www.livredepoche.com/sites/default/files/images/livres/couv/9782253151623-001-T.jpeg",
+  }
 ];
 
 // Si vous regardez l'URL de la page d'un livre vous verrez que ça fini par: /page_livre.html?id=
@@ -29,3 +38,26 @@ const id = urlParams.get("id"); // paramère id venant de l'URL, sera 0 ou 1
 
 
 // ALGO pour ajouter le bon livre:
+const livre = livres[id];
+
+
+// j'insère le text dans les balises text
+document.getElementById("titre").textContent = livre.titre;
+document.getElementById("auteur").textContent = livre.auteur;
+document.getElementById("description").textContent = livre.description;
+document.getElementById("date").textContent = livre.dateDeParution;
+document.getElementById("nombre-pages").textContent = livre.nombreDePages;
+
+// j'insère l'URL de l'image dans le src de la balise img
+document.getElementById("couverture").src = livre.image;
+
+// selon si disponible ou non j'affiche un texte différent avec une couleur de fond différente
+if (livre.estDisponible) {
+  // SI disponible
+  document.getElementById("disponible").textContent = "Disponible";
+  document.getElementById("disponible").classList.add("bg-success");
+} else {
+  // SINON indisponible
+  document.getElementById("disponible").textContent = "Non disponible";
+  document.getElementById("disponible").classList.add("bg-danger");
+}
